@@ -25,7 +25,8 @@ namespace BackgroundJobs
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            _timer?.Change(Timeout.Infinite, 0);
+            return Task.CompletedTask;
         }
 
         public void Dispose()
