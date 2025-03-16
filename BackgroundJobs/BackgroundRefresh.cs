@@ -20,7 +20,7 @@ namespace BackgroundJobs
 
         private void AddToCache(object? state)
         {
-            data.Data.Add($"Data added at {DateTime.Now.ToShortTimeString()}");
+            data.Data.Add($"Data added at: {DateTime.Now.ToShortTimeString()}");
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
