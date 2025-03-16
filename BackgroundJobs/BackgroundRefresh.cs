@@ -31,7 +31,7 @@ namespace BackgroundJobs
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _timer?.Dispose();
         }
     }
 }
